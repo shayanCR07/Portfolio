@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAYAN - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: white;
+            font-family: "Poppins", sans-serif;
+            transition: 0.5s ease;
+
+        }
+         .right a {
+            display: none;
+        }
+
+        /* For tablet and PC: show the list items */
+        @media (min-width: 768px) {
+            .right a {
+                display: block;
+            }
+        }
+    
+        nav{height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(131, 60, 203);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+        nav ul a{
+            list-style: none;
+            margin: 0 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(178, 147, 208)
+        }
+        .left{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+            margin: -105px;
+         
+        }
+        .right a:hover{
+            color: white;
+        }
+    
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80vh;
+        }
+        .firstsection > div{
+            width: 40%;
+        }
+        .rightsection{
+            width: 50%;
+        }
+        .rightsection img{
+            width: 38vw;
+            height: 70vh;
+            margin: 5px 5px;
+          
+        }
+        .leftsection{
+            margin: 10px 0;
+        }
+        .leftsection > div{
+            font-size: 2rem;
+        }
+        .purple{
+            font-weight: 600;
+            color: rgb(129, 61, 193);
+            font-size: 50px;
+        }
+        #element{
+            font-size: 50px;
+            font-weight: 600;
+            color: rgb(129, 61, 193);
+        }
+        .btn{
+            padding: 10px 20px;
+            margin: 10px 10px;
+            border: none;
+            background-color: rgb(129, 61, 193);
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.5s ease;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background-color: white;
+            color: rgb(129, 61, 193);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;            
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+        main hr{
+            border: 0;
+            background: blueviolet;
+            height: 1.5px;
+            margin: 40px 84px
+        }
+        .right1 img{
+            width: 25vw;
+            height: 80vh;
+            margin: 5px 5px;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about{
+            font-size: 2rem;
+            font-weight: 600;
+            color: rgb(129, 61, 193);
+        }
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto; 
+        }  
+        .thirdsection ul li{
+            margin: 30px 0;
+        } 
+        .fourthsection{
+            max-width: 80vw;
+            margin: auto; 
+           
+        }
+        .fourthsection ul{
+           
+            align-items: center;
+            margin: 20px 0;
+            padding: 30px;
+        }
+        .fourthsection ul li{
+            margin: 30px 0;
+            color: rgb(129, 61, 193);
+            font-size: 2rem;
+        }
+        .fifthsection{
+            max-width: 80vw;
+            margin: auto; 
+           
+        }
+        .achievement-card {
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+        }
+        .achievment-card :hover
+        {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .achievement-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .achievement-details {
+            padding: 20px;
+        }
+
+        .achievement-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .achievement-description {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .achievement-date {
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #999;
+        }
+        .sixthsection{
+            max-width: 80vw;
+            margin: auto; 
+           
+        }
+        .sixthsection ul li{
+            margin: 30px 0;
+            color: rgb(129, 61, 193);
+            font-weight: 450;
+            
+        }
+        .sixthsection ul{
+            padding: 30px;
+        }
+        .details{
+            opacity: 0.5;
+        }
+
+        footer{
+            background-color: rgb(176, 126, 222);
+            color: white;
+            text-align: center;
+           
+            height: 40vh;
+        }
+        footer p{
+            margin: 20px;
+            padding: 10px;
+        }
+        .footer{
+           padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer a{
+            color: white;
+            text-decoration: none;
+            margin: 10px 10px;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+    .firstsection {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .firstsection > div {
+        width: 100%;
+    }
+
+    .rightsection img {
+        width: 80%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .left {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul a {
+        margin: 5px 0;
+    }
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+    .purple {
+        font-size: 30px;
+    }
+
+    #element {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .achievement-card {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .achievement-title {
+        font-size: 1.2em;
+    }
+
+    .about {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer a {
+        margin: 5px 0;
+    }
+}
+        /*--------FOR CUSTOM SCROLLBAR--------*/
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(blueviolet,white); 
+            border-radius: 10PX;
+        }       
+    </style>
+</head>
+<body>
+    <header>
+        <nav> <!----NAVIGATION BAR---->
+            <div class="left"><i>Shayan</i></div>
+            <div class="right">
+                <ul>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#qualification">Qualifications</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#achievment">Achievments</a>
+                    <a href="#contact">Contact Me</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home"> <!----HOME SECTION---->
+            <div class="leftsection">
+                <h1>Hi, I'm </h1><span class="purple">Shayan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="alert('RESUME IS NOT ADDED YET!!');">Download Resume</button>
+                    <a href="https://github.com/shayan267" class="btn" target="_blank">GitHub</a>
+                </div>
+                
+            </div>
+              
+            <div class="rightsection">
+                <img src="developers.png" alt="">
+            </div>
+
+        </section>
+        <hr> 
+        <section class="secondsection"> <!----ABOUT ME SECTION---->
+            <span class="about" id="about">About Me</span>
+            <div class="container">
+            <div class="left1">
+                <p>
+                    Hello everyone, my name is <b><i>SHAYAN DAS</i></b>, I am a student of Computer Science and Engineering. I am a passionate web developer and a photographer. I love to capture the moments and make them memorable. I am a quick learner and always ready to learn new things. I am a good team player and always ready to help others.My hobbies are Drawing and playing Football..
+                </p>
+            </div>
+            <div class="right1">
+                <img src="mypic.jpg" alt="">
+            </div>
+           </div>
+        </section>
+        <hr>
+        <section class="thirdsection"> <!----QUALIFICATION SECTION---->
+            <span class="about" id="qualification">My Qualification</span>
+            <ul>
+                <li>Persuing B.Tech</li>
+                <p>In 2022, I have enrolled for the bachelor degree of technology at <b><i>FUTURE INSTITUTE OF ENGINEERING AND MANAGEMENT</i></b> specialization on <b><i>Computer Science And Engineering.</i></b></p>
+                <br>
+                <li>Higher Secondary</li>
+                <p>In 2021, I have passed my Higher Secondary from <b><i>TILJALA HIGH SCHOOL</i></b> with 69.4% marks.</p>
+                <br>
+                <li>Secondary</li>
+                <p>in 2019, I have passed my Madhyamik from <b><i>ST. PETER'S HIGH SCHOOL</i></b> with 68.85% marks.</p>
+            </ul>
+        </section>
+        <hr>
+        <section class="fourthsection"> <!----SKILLS SECTION---->
+            <span class="about" id="skills">My Skills in Tech</span>
+            <ul>
+            <li>HTML</li>
+                <p> HTML stands for HyperText Markup Language. It is the standard markup language for creating and designing web pages.</p>
+            <li>CSS</li>
+                <p>CSS, which stands for Cascading Style Sheets, is a style sheet language used for describing the presentation of a document written in HTML or XML</p>
+            <li>JavaScript</li>
+                <p>JavaScript (JS) is a high-level, interpreted programming language that is primarily known for enabling dynamic, interactive web pages. It allows developers to add functionality to websites and create more engaging user experiences.</p>
+            <li>Bootstrap</li>
+                <p>Bootstrap is a popular open-source front-end framework developed by Twitter. It provides a collection of pre-designed, responsive components and styles that make it easier for developers to create modern and consistent user interfaces for web applications. </p>
+            <li>Node.js</li>                    
+                <p>Node.js is a JavaScript runtime built on the Chrome V8 JavaScript engine. It allows you to run JavaScript on the server side, enabling the development of server-side and networking applications.</p>
+            <li>Express.js</li> 
+                <p>Express.js is a web application framework for Node.js that simplifies the process of building robust and scalable web applications. It provides a set of features for web and mobile application development, making it easier to handle routing, middleware, HTTP requests, and more.</p>
+            <li>MongoDB</li>
+                 <p>MongoDB is a popular, open-source NoSQL database management system that stores data in flexible, JSON-like documents. It is designed to be scalable, high-performance, and easy to work with, especially for applications with evolving data requirements.</p>
+            </ul>
+        </section>
+        <hr>
+        <section class="fifthsection"> <!----ACHIEVMENT SECTION---->
+            <span class="about" id="achievment">Achievments</span>
+            <div class="achievement-card">
+                <img class="achievement-image" src="sih.jpg" alt="Achievement Image">
+                <div class="achievement-details">
+                    <div class="achievement-title">SMART INDIA HACKATHON FINALIST 2023</div>
+                    <div class="achievement-description">SIH Finals is a prestigious national competition where teams present innovative tech solutions to address real-world challenges.</div>
+                    <div class="achievement-date">Date: December 19, 2023</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="sixthsection"> <!----CONTACT SECTION---->
+            <span class="about" id="contact">Contact Me</span>
+            <ul>
+                <li>GitHub Id</li>
+                <span class="details">shayan267</span>  
+                <li>Phone</li> 
+                <span class="details">+91 8420982712</span>             
+                <li>Email Address</li>
+                <span class="details">shayandas267@gmail.com</span>  
+                <li>Address</li>
+                <span class="details">119b Purba Panchanna Gram Kolkata 700100</span>  
+               
+            </ul>
+        </section>
+    </main>
+    <footer> <!----FOOTER SECTION---->
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/shayan-das-679a78274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linked In</a>
+            <a href="https://www.instagram.com/beyond___your___limits/" target="_blank"> Instagram</a>
+            <a href="https://www.facebook.com/shayan.das.3304" target="_blank">Facebook</a>
+            <h2><i>Shayan</i></h2>
+        </div>
+        <br>
+        <div>So, its all about me...Contact me if u want me to work with you..</div>
+        <p>Designed and Developed by Shayan</p>
+    </footer>
+                         <!-- Typed.js CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Photographer', 'Learner'],
+          backSpeed: 40,
+          typeSpeed: 40,
+          loop: true,
+        });
+      </script>
+    
+</body>
+</html>
